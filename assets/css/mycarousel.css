@@ -1,41 +1,31 @@
 /* external css: flickity.css */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-body { font-family: sans-serif; }
+body {
+  font-family: sans-serif;
+}
 
 .parallax-carousel {
-  background: #EEE;
+  background: #eee;
+  height: 100vh;
 }
 
 .parallax-carousel-cell {
   margin-right: 20px;
   overflow: hidden;
+  height: 100vh;
 }
 
 .parallax-carousel-cell img {
   display: block;
-  height: 12.5em; /** default: 200px */
+  height: 100vh; /** default: 200px or 12.5dm */
 }
 
-@media screen and ( min-width: 768px ) {
+@media screen and (min-width: 768px) {
   .parallax-carousel-cell img {
-    height: 25em; /** default: 400px */
-  }
-}
-
-/** **/
-.carousel {
-  background: #EEE;
-}
-
-.carousel img {
-  display: block;
-  height: 200px;
-}
-
-@media screen and ( min-width: 768px ) {
-  .carousel img {
-    height: 400px;
+    height: 100vh; /** default: 400px */
   }
 }
